@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-green-700">
+
+    <div class="max-w-[500px] mx-auto mt-36 p-12 bg-white rounded-2xl">
+        <div>
+            <h1 class="text-center pb-10 font-bold font text-3xl">Currency Convertor</h1>
+            <input type="text" id="rate" class="border rounded-md mx-15 w-[300px]">
+        </div>
+
+        <div class="flex mt-10 gap-12 justify-center">
+            <div>
+                <p>From</p>
+                <select id="from" class="border">
+                    <option value="">UZS</option>
+                </select>
+            </div>
+                   <p class="mx-10">🔛</p>
+            <div>
+                <p>To</p>
+                <select id="to" class="border">
+                    <option value="">RUB</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex mt-6 mx-14">
+            <p class="ml-20">Resultat: <span id="result"></span></p>
+        </div>
+        <button class="bg-slate-700 text-white border-2 border-black rounded-lg ml-32 mt-10 p-1" id="btn">Get Exchange
+            rate</button>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
